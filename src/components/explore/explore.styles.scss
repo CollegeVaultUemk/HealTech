@@ -1,8 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
+
 .explore {
   display: flex;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     margin-left: 120px;
     margin-top: 40px;
+    width: 100%;
     font-size: 25px;
     font-weight: 150;
+
+   
+
+
 }
+
+ 
+ .card-content {
+
+  height: 400px;
+  
+  
+  max-height: fit-content;
+  padding: 1rem;
+  background:linear-gradient(
+    hsl(0, 0%, 0%, 0),
+    hsl(20 0% 0% / 0.3) 15%,
+
+    hsl(0, 0%, 0%, 1) 
+  );
+
+
+     .card {
+  
+      opacity: .5;
+      color: #2db408;
+      text-align: center;
+      justify-content: center;
+      font-family: 'Quattrocento Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.5rem;
+      background-image: url(../../assets/cardpic.jpg);
+      background-size: cover;
+      padding: 10rem 0 0;
+      max-width: 35ch;
+    }
+     .card-title{
+      backdrop-filter: blur(5px);
+      position: relative;
+      width:max-content;
+      .Card-body{
+        backdrop-filter: blur(5px);
+      }
+
+      
+      
+     }
+      .card-title::after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #2db408;
+      
+
+     }
+     .button{
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      color: rgb(9, 9, 37);
+      background-color: #2db408;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+
+     }
+
+ }
+
+ 
