@@ -59,7 +59,9 @@ export const createUserDocumentFromAuth = async (
   }
 };
 
-export const SignInWithGoogle = async () => {return await signInWithPopup(auth, provider)};
+export const SignInWithGoogle = async () => {
+  return await signInWithPopup(auth, provider);
+};
 
 export const userSignUpWithEmail = async (email, password) => {
   if (!email || !password) return;
@@ -67,13 +69,14 @@ export const userSignUpWithEmail = async (email, password) => {
 };
 
 export const userSignInWithEmail = async (email, password) => {
-    if (!email || !password) return;
-    return await signInWithEmailAndPassword(auth, email, password);
-  };
+  if (!email || !password) return;
+  return await signInWithEmailAndPassword(auth, email, password);
+};
 
-  export const userSignOut = async () => {
-    return await signOut(auth);
-  };
+export const userSignOut = async () => {
+  return await signOut(auth);
+};
 
-  export const AuthChangeListener = (callback) => {
-    onAuthStateChanged(auth, callback);}
+export const AuthChangeListener = (callback) => {
+  onAuthStateChanged(auth, callback);
+};

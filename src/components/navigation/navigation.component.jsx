@@ -18,13 +18,21 @@ const Navigation = () => {
         </div>
 
         <div className="nav-menu">
-          <Link className="navlink" to="/">HOME</Link>
+          <Link className="navlink" to="/">
+            HOME
+          </Link>
           {currentUser ? (
-            <Link className="navlink" onClick={userSignOut}>SIGN OUT</Link>
+            <Link className="navlink" onClick={userSignOut}>
+              SIGN OUT
+            </Link>
           ) : (
-            <Link className="navlink" to="/auth">SIGN IN</Link>
+            <Link className="navlink" to="/auth">
+              SIGN IN
+            </Link>
           )}
-          <Link className="navlink" to="/dashboard/profile">DASHBOARD</Link>
+          <Link className="navlink" to="/dashboard/explore">
+            DASHBOARD
+          </Link>
           <MdDarkMode />
         </div>
       </div>

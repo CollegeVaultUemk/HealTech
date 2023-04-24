@@ -17,39 +17,33 @@ const Dashboard = () => {
   console.log(currentUser);
   const navigate = useNavigate();
   const location = useLocation();
-  const [selectedLinkIndex, setSelectedLinkIndex] = useState(1);
+  const [selectedLinkIndex, setSelectedLinkIndex] = useState(0); // Updated initial state to 0
 
   const handleLinkClick = (index) => {
     setSelectedLinkIndex(index);
   };
 
   const links = [
-    { icon: <CgProfile />, label: "Profile" },
-    { icon: <MdExplore />, label: "Explore" },
-    { icon: <BsIncognito />, label: "Doctors" },
-    { icon: <AiFillSchedule />, label: "Schedule" },
-    { icon: <MdMeetingRoom />, label: "Home" },
+    { icon: <CgProfile />, label: "Profile", path: "/dashboard/profile" },
+    { icon: <MdExplore />, label: "Explore", path: "/dashboard/explore" },
+    { icon: <BsIncognito />, label: "Doctors", path: "/dashboard/doctors" },
+    {
+      icon: <AiFillSchedule />,
+      label: "Schedule",
+      path: "/dashboard/schedule",
+    },
+    { icon: <MdMeetingRoom />, label: "Home", path: "/" },
   ];
 
   const renderLinks = () => {
     return links.map((link, index) => (
       <Link
         key={index}
-        className={`side-link ${selectedLinkIndex === index ? "selected" : ""}`}
+        className={`side-link ${
+          location.pathname === link.path ? "selected" : ""
+        }`}
         onClick={() => handleLinkClick(index)}
-        to={
-          index === 0
-            ? "/dashboard/profile"
-            : index === 1
-            ? "/dashboard/explore"
-            : index === 2
-            ? "/dashboard/doctors"
-            : index === 3
-            ? "/dashboard/schedule"
-            : index === 4
-            ? "/"
-            : ""
-        }
+        to={link.path}
       >
         {link.icon}
         {link.label}
@@ -66,6 +60,7 @@ const Dashboard = () => {
     // If the current route is /dashboard, navigate to /dashboard/explore
     if (location.pathname === "/dashboard") {
       navigate("/dashboard/explore");
+      setSelectedLinkIndex(1); // Highlight and select the Explore link
     }
   }, [navigate, location.pathname]);
 
