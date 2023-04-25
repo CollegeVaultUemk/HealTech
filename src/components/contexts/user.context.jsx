@@ -4,8 +4,6 @@ import {
   createUserDocumentFromAuth,
   AuthChangeListener,
 } from "../../utils/firebase.utils";
-import { getRedirectResult } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
 
 export const UserContext = createContext({
   currentUser: null,
@@ -15,7 +13,6 @@ export const UserContext = createContext({
 export const UserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const value = { currentUser, setCurrentUser };
-  //const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = AuthChangeListener((user) => {
@@ -23,6 +20,7 @@ export const UserProvider = ({ children }) => {
         createUserDocumentFromAuth(user);
       }
       setCurrentUser(user);
+      localStorage.setItem("user", JSON.stringify(user));
     });
     return unsubscribe;
   }, []);

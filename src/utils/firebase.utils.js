@@ -8,9 +8,14 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
-  signInWithRedirect,
 } from "firebase/auth";
-import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  setDoc,
+  collection,
+} from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -79,4 +84,37 @@ export const userSignOut = async () => {
 
 export const AuthChangeListener = (callback) => {
   onAuthStateChanged(auth, callback);
+};
+
+// Create a new collection for schedules
+export const schedulesCollection = collection(db, "schedules");
+
+// Function to add or update a user's schedule
+export const updateSchedule = async (uid, schedule) => {
+  const userScheduleRef = doc(schedulesCollection, uid);
+
+  try {
+    await setDoc(userScheduleRef, schedule);
+    console.log("Schedule updated successfully");
+  } catch (error) {
+    console.log("Error updating schedule: ", error);
+  }
+};
+
+// Function to get a user's schedule
+export const getSchedule = async (uid) => {
+  const userScheduleRef = doc(schedulesCollection, uid);
+
+  try {
+    const docSnapshot = await getDoc(userScheduleRef);
+    if (docSnapshot.exists()) {
+      return docSnapshot.data();
+    } else {
+      console.log("No schedule found for user");
+      return null;
+    }
+  } catch (error) {
+    console.log("Error getting schedule: ", error);
+    return null;
+  }
 };
