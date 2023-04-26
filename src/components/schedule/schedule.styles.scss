@@ -2,9 +2,31 @@
 
 .schedule {
   display: flex;
-    font-family: 'Quattrocento Sans', sans-serif;
-    margin-left: 120px;
-    margin-top: 40px;
-    font-size: 25px;
-    font-weight: 150;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin-left: 120px;
+  margin-top: 40px;
+  font-size: 25px;
+  font-weight: 150;
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .card {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

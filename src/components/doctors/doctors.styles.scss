@@ -29,17 +29,6 @@
         outline: none;
       }
     }
-    .search-button {
-      background-color: rgb(140, 147, 140);
-      width: 100px;
-      height: 40px;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-      &:hover {
-        background-color: rgb(96, 101, 96);
-      }
-    }
   }
   .doctors-list {
     display: flex;
@@ -47,7 +36,7 @@
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 150;
     .doctor {
       background-color: rgb(237, 230, 230);
