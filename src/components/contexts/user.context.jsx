@@ -20,7 +20,6 @@ export const UserProvider = ({ children }) => {
         createUserDocumentFromAuth(user);
       }
       setCurrentUser(user);
-      localStorage.setItem("user", JSON.stringify(user));
     });
     return unsubscribe;
   }, []);

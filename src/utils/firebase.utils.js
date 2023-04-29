@@ -64,6 +64,17 @@ export const createUserDocumentFromAuth = async (
   }
 };
 
+export const getUser = async (uid) => {
+  const userRef = doc(db, "users", uid);
+  const snapshot = await getDoc(userRef);
+
+  if (snapshot.exists()) {
+    return snapshot.data();
+  } else {
+    throw new Error(`User with UID ${uid} does not exist`);
+  }
+};
+
 export const SignInWithGoogle = async () => {
   return await signInWithPopup(auth, provider);
 };
