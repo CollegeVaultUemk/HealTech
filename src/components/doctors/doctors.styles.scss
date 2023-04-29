@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
 
 .doctors {
   display: flex;
-    font-family: 'Quattrocento Sans', sans-serif;
-    margin-left: 120px;
-    margin-top: 40px;
-    font-size: 25px;
+  flex-direction: column;
+  font-family: "Quattrocento Sans", sans-serif;
   width: 100%;
-  font-family: "Roboto", sans-serif;
-  margin-left: 100px;
+  margin-left: 120px;
   margin-top: 40px;
   padding-top: 30px;
   padding-bottom: 30px;
