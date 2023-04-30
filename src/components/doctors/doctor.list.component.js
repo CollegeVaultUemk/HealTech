@@ -1,4 +1,43 @@
-import Doc1 from "../../assets/doctorimg.jpg";
+import Doc1 from "../../assets/docImages/doctor1.jpg";
+import Doc2 from "../../assets/docImages/doctor2.jpg";
+import Doc3 from "../../assets/docImages/doctor3.webp";
+import Doc4 from "../../assets/docImages/doctor4.jpg";
+import Doc5 from "../../assets/docImages/doctor5.jpg";
+import Doc6 from "../../assets/docImages/doctor6.jpg";
+import Doc7 from "../../assets/docImages/doctor7.webp";
+import Doc8 from "../../assets/docImages/doctor8.jpg";
+import Doc9 from "../../assets/docImages/doctor9.webp";
+import Doc10 from "../../assets/docImages/doctor10.jpg";
+import Doc11 from "../../assets/docImages/doctor11.jpg";
+import Doc12 from "../../assets/docImages/doctor12.webp";
+import Doc13 from "../../assets/docImages/doctor13.jpg";
+import Doc14 from "../../assets/docImages/doctor14.jpg";
+import Doc15 from "../../assets/docImages/doctor15.jpg";
+import Doc16 from "../../assets/docImages/doctor16.jpg";
+import Doc17 from "../../assets/docImages/doctor17.jpg";
+import Doc18 from "../../assets/docImages/doctor18.jpg";
+import Doc19 from "../../assets/docImages/doctor19.jpg";
+import Doc20 from "../../assets/docImages/doctor20.jpg";
+import Doc21 from "../../assets/docImages/doctor21.webp";
+import Doc22 from "../../assets/docImages/doctor22.jpg";
+import Doc23 from "../../assets/docImages/doctor23.jpg";
+import Doc24 from "../../assets/docImages/doctor24.jpg";
+import Doc25 from "../../assets/docImages/doctor25.jpg";
+import Doc26 from "../../assets/docImages/doctor26.jpg";
+import Doc27 from "../../assets/docImages/doctor27.jpg";
+import Doc28 from "../../assets/docImages/doctor28.jpg";
+import Doc29 from "../../assets/docImages/doctor29.jpg";
+import Doc30 from "../../assets/docImages/doctor30.jpg";
+import Doc31 from "../../assets/docImages/doctor31.jpg";
+import Doc32 from "../../assets/docImages/doctor32.webp";
+import Doc33 from "../../assets/docImages/doctor33.jpg";
+import Doc34 from "../../assets/docImages/doctor34.jpg";
+import Doc35 from "../../assets/docImages/doctor35.jpg";
+import Doc36 from "../../assets/docImages/doctor36.jpg";
+import Doc37 from "../../assets/docImages/doctor37.jpg";
+import Doc38 from "../../assets/docImages/doctor38.jpg";
+import Doc39 from "../../assets/docImages/doctor39.jpeg";
+import Doc40 from "../../assets/docImages/doctor40.webp";
 
 const doctors_list = [
   {
@@ -15,7 +54,7 @@ const doctors_list = [
     specialization: "Neurology",
     rating: 4.5,
     reviews: 35,
-    image: Doc1,
+    image: Doc2,
   },
   {
     id: 3,
@@ -23,7 +62,7 @@ const doctors_list = [
     specialization: "Neurology",
     rating: 4.7,
     reviews: 42,
-    image: Doc1,
+    image: Doc3,
   },
   {
     id: 4,
@@ -31,23 +70,23 @@ const doctors_list = [
     specialization: "Neurology",
     rating: 4.4,
     reviews: 28,
-    image: Doc1,
+    image: Doc4,
   },
   {
     id: 5,
-    name: "Dr. Michael Johnson",
+    name: "Dr. Michael Reddy",
     specialization: "Orthopedics",
     rating: 4.9,
     reviews: 60,
-    image: Doc1,
+    image: Doc5,
   },
   {
     id: 6,
-    name: "Dr. Tyler Nixon",
+    name: "Dr. Rajesh Mittal",
     specialization: "Ophthalmology",
     rating: 4.1,
     reviews: 15,
-    image: Doc1,
+    image: Doc6,
   },
   {
     id: 7,
@@ -55,7 +94,7 @@ const doctors_list = [
     specialization: "Ophthalmology",
     rating: 3.8,
     reviews: 12,
-    image: Doc1,
+    image: Doc7,
   },
   {
     id: 8,
@@ -63,7 +102,7 @@ const doctors_list = [
     specialization: "Ophthalmology",
     rating: 4.5,
     reviews: 20,
-    image: Doc1,
+    image: Doc8,
   },
   {
     id: 9,
@@ -71,7 +110,7 @@ const doctors_list = [
     specialization: "Neurology",
     rating: 4.3,
     reviews: 18,
-    image: Doc1,
+    image: Doc9,
   },
   {
     id: 10,
@@ -79,7 +118,7 @@ const doctors_list = [
     specialization: "Ophthalmology",
     rating: 4.2,
     reviews: 16,
-    image: Doc1,
+    image: Doc10,
   },
   {
     id: 11,
@@ -87,7 +126,7 @@ const doctors_list = [
     specialization: "Cardiology",
     rating: 4.5,
     reviews: 25,
-    image: Doc1,
+    image: Doc11,
   },
   {
     id: 12,
@@ -95,7 +134,7 @@ const doctors_list = [
     specialization: "Cardiology",
     rating: 4.2,
     reviews: 18,
-    image: Doc1,
+    image: Doc12,
   },
   {
     id: 13,
@@ -103,7 +142,7 @@ const doctors_list = [
     specialization: "Cardiology",
     rating: 4.0,
     reviews: 14,
-    image: Doc1,
+    image: Doc13,
   },
   {
     id: 14,
@@ -111,7 +150,7 @@ const doctors_list = [
     specialization: "Cardiology",
     rating: 4.8,
     reviews: 32,
-    image: Doc1,
+    image: Doc14,
   },
   {
     id: 15,
@@ -119,7 +158,7 @@ const doctors_list = [
     specialization: "Cardiology",
     rating: 4.6,
     reviews: 28,
-    image: Doc1,
+    image: Doc15,
   },
   {
     id: 16,
@@ -127,7 +166,7 @@ const doctors_list = [
     specialization: "Orthopedics",
     rating: 4.8,
     reviews: 25,
-    image: Doc1,
+    image: Doc16,
   },
   {
     id: 17,
@@ -135,7 +174,7 @@ const doctors_list = [
     specialization: "Neurology",
     rating: 4.3,
     reviews: 17,
-    image: Doc1,
+    image: Doc17,
   },
   {
     id: 18,
@@ -143,7 +182,7 @@ const doctors_list = [
     specialization: "Orthopedics",
     rating: 4.2,
     reviews: 22,
-    image: Doc1,
+    image: Doc18,
   },
   {
     id: 19,
@@ -151,7 +190,7 @@ const doctors_list = [
     specialization: "Orthopedics",
     rating: 4.5,
     reviews: 19,
-    image: Doc1,
+    image: Doc19,
   },
   {
     id: 20,
@@ -159,7 +198,7 @@ const doctors_list = [
     specialization: "Gastroenterology",
     rating: 4.6,
     reviews: 24,
-    image: Doc1,
+    image: Doc20,
   },
   {
     id: 21,
@@ -167,7 +206,7 @@ const doctors_list = [
     specialization: "Gastroenterology",
     rating: 4.7,
     reviews: 29,
-    image: Doc1,
+    image: Doc21,
   },
   {
     id: 22,
@@ -175,7 +214,7 @@ const doctors_list = [
     specialization: "Gastroenterology",
     rating: 4.3,
     reviews: 21,
-    image: Doc1,
+    image: Doc22,
   },
   {
     id: 23,
@@ -183,7 +222,7 @@ const doctors_list = [
     specialization: "Orthopedics",
     rating: 4.8,
     reviews: 38,
-    image: Doc1,
+    image: Doc23,
   },
   {
     id: 24,
@@ -191,7 +230,7 @@ const doctors_list = [
     specialization: "Gastroenterology",
     rating: 4.1,
     reviews: 12,
-    image: Doc1,
+    image: Doc24,
   },
   {
     id: 25,
@@ -199,7 +238,7 @@ const doctors_list = [
     specialization: "Gastroenterology",
     rating: 4.6,
     reviews: 26,
-    image: Doc1,
+    image: Doc25,
   },
   {
     id: 26,
@@ -207,7 +246,7 @@ const doctors_list = [
     specialization: "Dermatology",
     rating: 4.5,
     reviews: 20,
-    image: Doc1,
+    image: Doc26,
   },
   {
     id: 27,
@@ -215,7 +254,7 @@ const doctors_list = [
     specialization: "Dermatology",
     rating: 4.2,
     reviews: 18,
-    image: Doc1,
+    image: Doc27,
   },
   {
     id: 28,
@@ -223,7 +262,7 @@ const doctors_list = [
     specialization: "Dermatology",
     rating: 4.0,
     reviews: 14,
-    image: Doc1,
+    image: Doc28,
   },
   {
     id: 29,
@@ -231,7 +270,7 @@ const doctors_list = [
     specialization: "Dermatology",
     rating: 4.6,
     reviews: 25,
-    image: Doc1,
+    image: Doc29,
   },
   {
     id: 30,
@@ -239,7 +278,7 @@ const doctors_list = [
     specialization: "Dermatology",
     rating: 4.1,
     reviews: 16,
-    image: Doc1,
+    image: Doc30,
   },
   {
     id: 31,
@@ -247,7 +286,7 @@ const doctors_list = [
     specialization: "Hematology",
     rating: 4.5,
     reviews: 23,
-    image: Doc1,
+    image: Doc31,
   },
   {
     id: 32,
@@ -255,7 +294,7 @@ const doctors_list = [
     specialization: "Hematology",
     rating: 4.8,
     reviews: 10,
-    image: Doc1,
+    image: Doc32,
   },
   {
     id: 33,
@@ -263,7 +302,7 @@ const doctors_list = [
     specialization: "Hematology",
     rating: 4.2,
     reviews: 12,
-    image: Doc1,
+    image: Doc33,
   },
   {
     id: 34,
@@ -271,7 +310,7 @@ const doctors_list = [
     specialization: "Hematology",
     rating: 4.7,
     reviews: 18,
-    image: Doc1,
+    image: Doc34,
   },
   {
     id: 35,
@@ -279,12 +318,12 @@ const doctors_list = [
     specialization: "Hematology",
     rating: 4.3,
     reviews: 9,
-    image: Doc1,
+    image: Doc35,
   },
   {
     id: 36,
     name: "Dr. Emily Smith",
-    image: Doc1,
+    image: Doc36,
     specialization: "Pediatrics",
     rating: 4.8,
     reviews: 120,
@@ -292,7 +331,7 @@ const doctors_list = [
   {
     id: 37,
     name: "Dr. Michael Johnson",
-    image: Doc1,
+    image: Doc37,
     specialization: "Pediatrics",
     rating: 4.5,
     reviews: 80,
@@ -300,7 +339,7 @@ const doctors_list = [
   {
     id: 38,
     name: "Dr. Sarah Lee",
-    image: Doc1,
+    image: Doc38,
     specialization: "Pediatrics",
     rating: 4.2,
     reviews: 95,
@@ -308,7 +347,7 @@ const doctors_list = [
   {
     id: 39,
     name: "Dr. Robert Baker",
-    image: Doc1,
+    image: Doc39,
     specialization: "Pediatrics",
     rating: 4.1,
     reviews: 60,
@@ -316,7 +355,7 @@ const doctors_list = [
   {
     id: 40,
     name: "Dr. Samantha Scott",
-    image: Doc1,
+    image: Doc40,
     specialization: "Pediatrics",
     rating: 4.7,
     reviews: 100,
