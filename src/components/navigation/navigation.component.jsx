@@ -1,7 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import { MdDarkMode } from "react-icons/md";
 import "./navigation.styles.scss";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/HealTech.png";
 import { Outlet, Link } from "react-router-dom";
 import { UserContext } from "../contexts/user.context";
 import { userSignOut } from "../../utils/firebase.utils";
