@@ -1,104 +1,274 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
 
 /* Keyframes for the fade-in */
 @-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-.home {
+  from {
     opacity: 0;
-        -webkit-animation: fadeIn ease-in 1;
-        -moz-animation: fadeIn ease-in 1;
-        animation: fadeIn ease-in 1;
-    
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-    
-        -webkit-animation-duration: 0.7s;
-        -moz-animation-duration: 0.7s;
-        animation-duration: 0.7s;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 
+.home-container {
+  height: 370vh;
+  .home {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
 
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 
-
-
-
-
-
+    -webkit-animation-duration: 0.7s;
+    -moz-animation-duration: 0.7s;
+    animation-duration: 0.7s;
 
     height: 100vh;
-    margin: 30px 50px 0 50px;
+    margin: 30px 50px 170px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     .intro {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        
-        .intro-1 {
-            margin: 0 0 60px 0;
-            font-family: 'Quattrocento Sans', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 60px;
-            line-height: 70px;
-            
-        }
-        .intro-2 {
-            font-family: 'Quattrocento Sans', sans-serif;
-            font-size: 25px;
-            font-weight: 250;   
-            
-        }
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .intro-1 {
+        margin: 0 0 60px 0;
+        font-family: "Quattrocento Sans", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 70px;
+      }
+      .intro-2 {
+        font-family: "Quattrocento Sans", sans-serif;
+        font-size: 25px;
+        font-weight: 250;
+      }
     }
 
-         @media screen and (max-width: 768px) {
-             flex-direction: column;
-             align-items: center;
-    
-             .intro {
-                 width: 100%;
-                 align-items: center;
-    
-                 .intro-head {
-                     font-size: 36px;
-                 }
-    
-                 .intro-info {
-                     font-size: 24px;
-                 }
-             }
-         }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      .intro {
+        width: 100%;
+        align-items: center;
+
+        .intro-head {
+          font-size: 36px;
+        }
+
+        .intro-info {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .about {
+    height: 100vh;
+    margin: 30px 50px 200px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+
+    .intro {
+      height: 100%;
+      // margin-top: 10vh;
+      // padding-left: 20px;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .about-head {
+        margin: 30px 0 60px 0;
+        font-family: "Abhaya Libre", sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+      }
+
+      .about-info {
+        font-family: "Abhaya Libre", sans-serif;
+        font-size: 30px;
+        font-weight: 100;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .aboutpic {
+      width: 50%;
+      height: 100%;
+      //margin-right: 10px;
+      //padding: 2px;
+
+      //object-fit: contain;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      .intro {
+        width: 100%;
+        align-items: center;
+
+        .about-head {
+          font-size: 36px;
+        }
+
+        .about-info {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    height: 110vh;
+    position: relative;
+    margin-bottom: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .contact-wrapper {
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      padding: 40px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      background: transparent;
+
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+
+      .mb-3 {
+        color: #1b0123;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 30px;
+        text-transform: capitalize;
+      }
+
+      .input-field {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+      }
+      .input-field input,
+      .input-field textarea {
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #999;
+        font-size: 16px;
+        color: #050005;
+        font-weight: 500;
+        text-transform: none;
+      }
+
+      .input-field label {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        padding: 10px 0;
+        pointer-events: none;
+        font-size: 18px;
+        color: #2d0000;
+        font-weight: 500;
+        text-transform: none;
+        transition: 0.5s;
+      }
+
+      .input-field input:focus ~ label,
+      .input-field input:valid ~ label,
+      .input-field textarea:focus ~ label,
+      .input-field textarea:valid ~ label {
+        top: -18px;
+        font-size: 16px;
+        padding: 2px 5px;
+        background: #ff006a;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      .btn {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        font-size: 17px;
+        font-weight: 500;
+        background: linear-gradient(120deg, #b1009f, #b1009f);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin-top: 40px;
+      }
+
+      .btn:hover {
+        background-position: right;
+      }
+    }
+  }
+  .footer {
+    height: 10vh;
+    background-color: #1b0123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Abhaya Libre", sans-serif;
+  }
 }
