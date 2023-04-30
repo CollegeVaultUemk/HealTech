@@ -1,73 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
 
 .profile {
   opacity: 0;
-    -webkit-animation: fadeIn ease-in 1;
-    -moz-animation: fadeIn ease-in 1;
-    animation: fadeIn ease-in 1;
-  
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  
-    -webkit-animation-duration: 0.7s;
-    -moz-animation-duration: 0.7s;
-    animation-duration: 0.7s;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
 
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-
-
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  animation-duration: 0.7s;
 
   padding: 100px 100px 100px 140px;
   display: flex;
   flex-direction: column;
-  font-family: 'Sigmar', cursive;
+  font-family: "Sigmar", cursive;
   margin-left: 100px;
   margin-top: 1px;
   font-size: 40px;
   font-weight: 200;
-  
+
   width: 100vw;
   height: 120vh;
   background-image: url(../../assets/profileback.webp);
   background-size: 100vw 100vh;
-  
-  
-  
- 
 
   .profile-image {
     display: inline-block;
     width: 115px;
     height: 80px;
-    border-radius:25px;
+    border-radius: 25px;
     align-items: center;
     justify-content: center;
     background-image: url(../../assets/userimg.gif);
-    background-size:120px;
+    background-size: 120px;
     opacity: 0.8;
-    
-      
-    
-
-        
   }
-  .span{
+  .span {
     backdrop-filter: blur(2.5px);
     color: #97336d;
     width: 180px;
-
-    
   }
   .user-name {
     backdrop-filter: blur(2.5px);
-    width: 160px;
+    width: 100%;
   }
-  .email{
+  .email {
     backdrop-filter: blur(2.5px);
-    width: 500px;
+    width: 100%;
   }
-
-
+  .date {
+    backdrop-filter: blur(2.5px);
+    width: 100%;
+  }
 }

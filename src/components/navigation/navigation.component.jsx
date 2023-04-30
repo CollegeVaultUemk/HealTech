@@ -1,5 +1,4 @@
 import React, { Fragment, useContext } from "react";
-import { MdDarkMode } from "react-icons/md";
 import "./navigation.styles.scss";
 import Logo from "../../assets/HealTech.png";
 import { Outlet, Link } from "react-router-dom";
@@ -33,7 +32,6 @@ const Navigation = () => {
           <Link className="navlink" to="/dashboard/explore">
             DASHBOARD
           </Link>
-          <MdDarkMode />
         </div>
       </div>
       <Outlet />

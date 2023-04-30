@@ -7,7 +7,6 @@ import { CgProfile } from "react-icons/cg";
 import { BsIncognito } from "react-icons/bs";
 import { MdMeetingRoom } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
-import { MdDarkMode } from "react-icons/md";
 import { AiFillSchedule } from "react-icons/ai";
 import { userSignOut } from "../../utils/firebase.utils";
 import "./dashboard.styles.scss";
@@ -71,10 +70,6 @@ const Dashboard = () => {
           <div className="sidebar">
             <div className="sidebar-wrapper">
               {renderLinks()}
-              <Link className="side-link">
-                <MdDarkMode />
-                Dark Mode
-              </Link>
               <Link className="side-link" onClick={userSignOut}>
                 <FiLogOut />
                 Log Out

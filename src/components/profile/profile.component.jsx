@@ -23,16 +23,15 @@ const Profile = () => {
     <Fragment>
       {currentUser ? (
         <div className="profile">
-          
-
-            <div className="profile-image">
-            
+          <div className="profile-image"></div>
+          <h2 className="span">Your Profile</h2>
+          <div className="user-name">Name : {userObj.displayName}</div>
+          <div className="email">Email : {userObj.email}</div>
+          {userObj.createdAt && (
+            <div className="date">
+              Date Joined : {userObj.createdAt.toDate().toLocaleDateString()}
             </div>
-            <h2 className="span">Profile</h2>
-            <div className="user-name">{userObj.displayName}</div>
-            <div className="email">{userObj.email}</div>
-         
-          
+          )}
         </div>
       ) : (
         <div>Not Logged in</div>
