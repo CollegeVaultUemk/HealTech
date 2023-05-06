@@ -218,14 +218,7 @@ const Explore = () => {
       </div>
       </div>
 
-      <div className="card-content">
-         <div className="card">
-          <h2 className="card-title">Cardiology</h2>
-             <p className="card-body">Diseases and disorders of the heart and blood vessels.</p>
-           {/* <link className="card-link" to="/dashboard/https://www.britannica.com/">Learn more..</link> */}
-          <a className="button" href="https://www.britannica.com/" target="_blank">Learn more..</a>
-      </div>
-      </div>
+      
 
 </div>;
   
